@@ -1,0 +1,70 @@
+  127  cd /mnt/scratch-lustre/student9
+  129  mkdir CTA200_2024
+  133  mkdir -p assignment_1/CTA200_2024
+  136  cd CTA200_2024
+  140  cd /mnt/scratch-lustre/student9/CTA200_2024/
+  142  touch README.md
+  145  vi README.md 
+  150  cd assignment_1/
+  153  find . -user murray
+  155  cd ~murray
+  159  find . -name /home/murray/"Hello.world.c"
+  164  cd /mnt/scratch-lustre/student9
+  165  cd /mnt/scratch-lustre/student9/CTA200_2024/
+  167  cd /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  169  module
+  170  module load gcc
+  174  man gcc
+  176  cd ~murray
+  182  cp ./Hello_world.c /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  184  cp ./Hello_world.py /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  185  cd /mnt/scratch-lustre/student9
+  187  cd /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  189  mv Hello_world.c Hello_world_laing.c
+  191  mv Hello_world.py Hello_world_laing.py
+  193  find . -name "Hell*" -print 2>/dev/null
+  194  cd ~murray
+  195  find . -name "Hell*" -print 2>/dev/null
+  196  cd /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  199  mv Hello_world_laing.c CTA200_2024
+  201  mv Hello_world_laing.py CTA200_2024
+  203  cd /mnt/scratch-lustre/student9/CTA200_2024/
+  205  cd /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  214  gcc -o Hello_world.x Hello_world_laing.c
+  215  ls -la
+  217  ./Hello_world.x
+  219  echo $PATH
+  220  ./Hello_world.x 
+  221  module load python
+  222  python Hello_world_laing.py
+  224  vi Hello_world.x
+  227  ls -la
+  228  git clone https://github.com/isabelle-laing/CTA200H.git
+  230  cat README.md
+  231  vi CTA200H/
+  232  cd /mnt/scratch-lustre/student9/CTA200_2024/
+  234  vi README.md
+  243  lobster$ cd /mnt/scratch-lustre/student9/CTA200_2024
+  246  cd /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/
+  248  ls -la
+  275  mv CTA200H /mnt/scratch-lustre/student9
+  278  cd CTA200H
+  298  vi README.md
+  301  git add README.md 
+  302  git commit README.md 
+  304  git push
+  306  cd /mnt/scratch-lustre/student9/CTA200_2024/assignment_1/CTA200_2024/
+  314  vi Hello_world_laing.py
+  315  vi Hello_world_laing.c
+  316  ./Hello_world.x
+  321  gcc -o Hello_world_modified.x Hello_world_laing.c
+  322  ./Hello_world_modified.x 
+  323  python Hello_world_laing.py 
+  324  vi Hello_world_laing.c
+  325  gcc -o Hello_world_modified.x Hello_world_laing.c
+  326  ./Hello_world_modified.x 
+  328  ./Hello_world_modified.x > output_c.txt
+  329  dir
+  330  python Hello_world_laing.py > output_python.txt
+  331  dir
+  332  history > history.txt
