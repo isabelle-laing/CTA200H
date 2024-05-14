@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{A3 CTA200H}
+\author{Isabelle Laing}
+\date{May 2024}
+\usepackage{amsmath} 
+\usepackage{graphicx} 
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In assignment 3, we worked on using Python to create plots and images based on functions given to us or that are well known (such as the Lorenz equations 25, 26, and 27). In question 1, we started by working with a complex plane and iterating through two separate variables, both on the range [-2, 2]. When iterating through points in a complex plane, some points follow the modulus or absolute value bound of convergence while others diverge to infinity. After writing up code to iterate through \( x \) and \( y \) using for loops, we had to check for convergence. Despite many, many attempts of mine to run through with the formula \( \text{abs}(z) = \text{real}(z)^2 + \text{imag}(z)^2 \), I was never able to properly filter through all the values. So I had to seek some other method. Eventually, using the same threshold technique we used in class prior for other codes, I tried out a threshold of divergence. If the absolute value of \( z \) was above a certain threshold, we could pretty much confirm it was divergent. I ended on the value of ‘2’ because it seemed to work as the code was producing a Mandelbrot fractal (figure 1), which is what happens when you iterate points through a complex plane. 
+
+After that, I just had to plot the graph's coloring points from two different lists in different colors. Then for the second image, I needed a colorbar. A friend had tried making a contour plot but that seemed above our skill level, so I stuck with another scatter plot to produce the results I wanted (figure 2). Then I just had to play with colors until the image was visually comprehensible. 
+
+After that, I moved on to the much more troubling question 2, which was difficult for me as I have only just finished my 1st year at UofT and ordinary differential equations are above anything I have learnt so far. Per the advice of our prof, I created one function that had all three Lorenz equations in an array, rather than three separate functions. Then I used the solve.ivp Ode Solver to get solutions from these equations. Weirdly, when comparing with a peer, our arrays were producing different results entirely. Mine were mostly negative numbers while theirs were much bigger. However, once we created the plots, they seemed identical. Possibly this led later on to issues I don’t understand, but we had to leave it for the sake of finishing the assignment on time. When plotting the three different time intervals into one graph, my main issue was not realizing I would have to reset the initial condition values. Once that was resolved, it seemed to have come together (figure 3).
+
+Then I had to do question 4. Unfortunately, just plotting \( X \) and \( Y \) on their respective axes turned into a whole problem as I over complicated the code multiple times. Once I had figured out it was way simpler than I made it, a result came out and I do have a graph (figure 4). I am entirely unsure if it’s what I am supposed to have, but it’ll have to suffice considering this assignment was due the next day. 
+
+Finally, question 5 was about plotting the difference between two slightly different values to show how chaos will take slight differences in initial conditions and entirely change the outcome. At first, I believed the ‘distance’ we had to plot was a physical distance between two objects. However, it was referring to distance on a plot, which I realized very late on. Finally, I wrote out that code and I was finished (figure 5).
+
+I have attached all the images for this assignment on a PDF submitted alongside this assignment in the same folder. 
+
+\end{document}
